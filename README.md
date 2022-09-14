@@ -24,7 +24,7 @@ Cuando nuestro servidor esté instalado correctamente necesitaremos lo siguiente
 
 Para activar los distintos servicios ejecutaremos los siguientes comandos:
 
-```sh
+```
 $ sudo systemctl enable ssh
 $ sudo ufw enable
 $ sudo systemctl start docker
@@ -33,8 +33,7 @@ $ sudo systemctl start mariadb
 
 Lo primero de todo sera conectarnos mediante ssh a nuestro servidor remoto. Desde el servidor deberemos dar acceso a una conexión en el puerto 22(SSH), lo podemos ejectuar con el siguiente comando : ```ufw allow 22/tcp```.
 
-Con el puerto 22 ya abierto para recibir conexiones ya podremos conectarnos a nuestro servidor con el siguiente comando : ```sh
-ss -p 22 {usuario}@{ip}``` (Sustituyendo usuario por el nombre de usuario definido en el servidor o root y la ip por la ip local
+Con el puerto 22 ya abierto para recibir conexiones ya podremos conectarnos a nuestro servidor con el siguiente comando : ```ssh -p 22 {usuario}@{ip}``` (Sustituyendo usuario por el nombre de usuario definido en el servidor o root y la ip por la ip local
 publica del servidor)
 
 Para más seguridad se recomienda bloquear las conexiones al servidor mediante root, utilizar una clave SSH y utilizar un puerto de conexión remota distinto al predeterminado.

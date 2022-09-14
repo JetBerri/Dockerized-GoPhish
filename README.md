@@ -227,8 +227,7 @@ Crear el Container de Gophish con la red de mysql_net, le agrego luego a la red 
 y se conecte con el exterior y para finalizar entro a el Container yhago un update (ignoro el error) y un upgrade:
 
 ```sh
-docker run -d --name gophish --restart always --network mysql_net -p3333:3333 -p 81:81 gophish/user docker network connect
-bridge gophish
+docker run -d --name gophish --restart always --network mysql_net -p3333:3333 -p 81:81 gophish/user docker network connect bridge gophish
 ```
 
 # Advertencia

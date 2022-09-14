@@ -40,7 +40,7 @@ Para más seguridad se recomienda bloquear las conexiones al servidor mediante r
 
 Ahora crearemos un usuario nuevo en nuestro sistema y lo añadiremos a Docker : 
 ```sh
-useradd -s /bin/bash -d /home/gophish-user/ -m -G docker gophish-user```
+useradd -s /bin/bash -d /home/gophish-user/ -m -G docker gophish-user
 ```
 
 Puertos que requerirán estar abiertos de manera predeterminada:

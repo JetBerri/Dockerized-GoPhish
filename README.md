@@ -136,8 +136,7 @@ SET @variable_name := value;
 
 Comando Docker para añadirlas :
 ```sh
-docker run --restart always --network mysql_net --ip 192.169.0.2 --name mariadb -e MARIADB_ROOT_PASSWORD=Mascl3tA -v mariadb:/v
-r/lib/mysql -d mariadb
+docker run --restart always --network mysql_net --ip 192.169.0.2 --name mariadb -e MARIADB_ROOT_PASSWORD=Mascl3tA -v mariadb:/var/lib/mysql -d mariadb
 ```
          
 Ahora accederemos y crearemos el usuario : 

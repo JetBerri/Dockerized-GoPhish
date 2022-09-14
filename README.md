@@ -2,6 +2,8 @@
 
 Montando y configurando sistema de phishing GoPhish en sistema Ubuntu Sever con Docker.
 
+---------------------------------------------------------------
+
 Índice :
 
   1. Preparación
@@ -49,8 +51,8 @@ Puertos que requerirán estar abiertos de manera predeterminada:
 - 9000/tcp : Portainer
 - 81/tcp : Campañas
 
-Reglas de la Firewall abiertas: 
-
+Reglas de la Firewall abiertas:
+```
 root@sv:/home/gophish-user# ufw status
 Status: active
 
@@ -60,7 +62,7 @@ To                         Action      From
 3333/tcp                   ALLOW       Anywhere                  
 9000/tcp                   ALLOW       Anywhere                  
 81/tcp                     ALLOW       Anywhere     
-
+```
 # Instalación de GoPhish
 
 [Descargar](https://getgophish.com/)

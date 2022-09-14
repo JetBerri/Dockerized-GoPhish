@@ -172,8 +172,7 @@ Fichero de configuracion de GoPhish -> config.json
                 "key_path": "example.key"
         },
         "db_name": "mysql",
-        "db_path": "gophish2:G0ph1sH@(192.169.0.2:3306)/gophish?
-charset=utf8&parseTime=True&loc=UTC",
+        "db_path": "gophish2:G0ph1sH@(192.169.0.2:3306)/gophish?charset=utf8&parseTime=True&loc=UTC",
         "migrations_prefix": "db/db_",
         "contact_address": "",
         "logging": {

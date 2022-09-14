@@ -109,7 +109,7 @@ Las imágenes del email con la campaña se encuentran en el servidor local de Ub
 pache, el cual atachamos como volumen (BIND):
 
 ```sh
-$ docker run -d --restart always -p 8080:8080 -p 8443:8443 --name web_server -v ${HOME}/Docker/Gophish/apache:/opt/ bitnami/apache2/htdocs/bitnami/apache:latest
+$ docker run -d --restart always -p 8080:8080 -p 8443:8443 --name web_server -v ${HOME}/Docker/Gophish/apache:/opt/bitnami/apache2/htdocs/ bitnami/apache:latest
 ```
 
 # MariaDB - Bases de datos

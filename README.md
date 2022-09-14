@@ -208,8 +208,8 @@ WORKDIR /opt/gophish
 RUN mv config.json config.json.bkp
 
 COPY config.json .
-COPY quersystem.tiraquelibras.com.crt .
-COPY quersystem.tiraquelibras.com.key .
+COPY example.com.crt .
+COPY example.com.key .
 
 RUN chown app: $CONFIG_FILERUN 
 RUN chown app: $CRT_FILERUN 
@@ -228,7 +228,7 @@ Crear el Container de Gophish con la red de mysql_net, le agrego luego a la red 
 y se conecte con el exterior y para finalizar entro a el Container yhago un update (ignoro el error) y un upgrade:
 
 ```sh
-docker run -d --name gophish --restart always --network mysql_net -p3333:3333 -p 81:81 gophish/quersystemdocker network connect
+docker run -d --name gophish --restart always --network mysql_net -p3333:3333 -p 81:81 gophish/user docker network connect
 bridge gophish
 ```
 
@@ -294,13 +294,13 @@ Name : Utiliza el nombre que prefieras. (Google)
 
 Interface Type : Utiliza siempre SMPT para utilizar un servidor web de mail.
 
-From : Una dirección de correo electrónico válida. (quersystem@gmail.com)
+From : Una dirección de correo electrónico válida. (example@gmail.com)
 
 Host : Link del servidor SMPT. (smpt.gmail.com:587)
 
-Username : Utiliza el nombre de usuario que prefieras. (quersystem@gmail.com)
+Username : Utiliza el nombre de usuario que prefieras. (example@gmail.com)
 
-Password : Contraseña de tu cuenta de mail. (Ex : Quersystem123)
+Password : Contraseña de tu cuenta de mail. (Ex : Example123)
 
 Se recomienda enviar el mail de prueba disponible para comprobar que todo ha funcionado correctamente. [victim:(positionasunto)
 

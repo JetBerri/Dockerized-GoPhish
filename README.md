@@ -249,19 +249,20 @@ quier equipo, lo activo einstalo las dependencias (el módulo python-docx me dio
 te lo instalé a mano sin ningún problema ```python -m pip install python-docx```):
 
 ```sh
-cd Georeport
+$ cd Georeport
 
-python3 -m pip install virtualenv
-python3 -m virtualenv .my_project
+$ python3 -m pip install virtualenv
+$ python3 -m virtualenv .my_project
 
-. .my_project/bin/activate
+$ . .my_project/bin/activate
 
-python -m pip install --upgrade pip
+$ python -m pip install --upgrade pip
 
-python -m pip install -r requirements.txt
+$ python -m pip install -r requirements.txt
+```
 
 Luego creas el archivo gophish.config y completas los datos necesarios:
-
+```sh
 [Gophish]
 
 gp_host: https://127.0.0.1:3333

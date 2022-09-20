@@ -23,7 +23,14 @@ Cuando nuestro servidor esté instalado correctamente necesitaremos lo siguiente
   - UFW : Lo usaremos como firewall para abrir y bloquear puertos. (sudo apt install ufw)
   - Unzip : Descomprimiremos GoPhish (sudo apt install unzip)
   - Maria DB : Lo utilizaremos como base de datos (sudo apt install mariadb-server && sudo mysql_secure_installation)
-
+  
+  ```sh
+  sudo apt install openssh-server
+  sudo apt install docker && sudo apt install docker.io
+  sudo apt install ufw
+  sudo apt install unzip
+  sudo apt install mariadb-server && sudo mysql_secure_installation
+```
 Para activar los distintos servicios ejecutaremos los siguientes comandos:
 
 ```

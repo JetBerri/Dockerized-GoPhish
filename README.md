@@ -294,7 +294,7 @@ https://www.wessii.com/infografias-phishing-y-suplantacion-de-identidad/
 
 Utilizaremos un caso con Google
 
-1. Configurar "Sending Profile"
+1. **Configurar "Sending Profile"**
 
 Name : Utiliza el nombre que prefieras. (Google)
 
@@ -313,7 +313,7 @@ Se recomienda enviar el mail de prueba disponible para comprobar que todo ha fun
 
 SAVE.
 
-2. Configurar "Landing Page"
+2. **Configurar "Landing Page"**
 
 Name : Nombre de la página web que se intenta clonar. (Google)
 
@@ -328,7 +328,7 @@ Redirect to :  Redirigirá al sitio una vez que se haya enviado la contraseña. 
 
 SAVE.
 
-3. Email Templates
+3. **Email Templates**
 
 Name :  Introduce el nombre que vas a utilizar para el Mail  (Google)
 
@@ -344,7 +344,7 @@ Añadir archivos al mail.
 
 SAVE.
 
-4. Configuraciión de "Groups"
+4. **Configuraciión de "Groups"**
 
 Name : Nombre del grupo (victims)
 
@@ -352,7 +352,7 @@ Ingrese un nombre, apellido, dirección de correo electrónico y asunto. Y presi
 
 SAVE
 
-5. Configuración de "Campaigns".
+5. **Configuración de "Campaigns".**
 
 Name : Cualquier nombre. (Google)
 
